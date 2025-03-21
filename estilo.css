@@ -1,123 +1,71 @@
-body { 
-    background-color: #000000; 
-    background-color: RGBA(0, 0, 0, 0); 
-    margin: 0 auto; 
-    overflow: hidden; 
-} .controller.xbox{
+/* Estilos personalizados para Gamepad Viewer */
+
+.controller.custom {
     background: url(Body.png);
-    width: 807px;
-    height: 651px;
-    margin-left: 0;
-    margin-top: 0;
-} .xbox .sticks {
-	width: 367px;
-    height: 100px;
-    left: 220px;
-    top: 333px;
-}.xbox .stick {
-    background: url(sticks.png);
-    width: 100px;
-    height: 100px;
-} .xbox .stick.pressed {
-    background-position: -102px 0;
-} .xbox .stick.right {
-    top: 0;
-    left: 267px;
-} .xbox .abxy {
-    width: 181px;
-    height: 181px;
-    left: 573px;
-    top: 178px;
-} .xbox .button {
-    background: url(buttons.png);
-    width: 58px;
-    height: 58px;
-} .xbox .button.pressed {
-  	background-position-y: -59px;
-	margin-top: 0;
-} .xbox .a {
-    background-position: 0 0;
-    left: 61px;
-    top: 123px;
-} .xbox .b {
-    background-position: -59px 0;
-    left: 123px;
-    top: 62px;
-} .xbox .x {
-    background-position: -118px 0;
-    left: 0px;
-    top: 61px;
-} .xbox .y {
-    background-position: -177px 0;
-    left: 61px;
-    top: 0px;
-} .xbox .arrows {
-    left: 195px;
-	top: 140px;
-    width: 416px;
-    height: 57px;
-} .xbox .quadrant { 
-    display: none; 
-} .xbox .back, .xbox .start {
-    background: url(options.png);
-    width: 27px;
-    height: 57px;
-    opacity: 0;
-} .xbox .start {
-    background-position: 27px 0;
-    float: right;
-} .xbox .dpad {
-	width: 144px;
-    height: 144px;
-    left: 71px;
-    top: 196px;
-} .xbox .face {
-    background: url(dpad.png);
+    height: 630px;
+    width: 750px;
+    margin-left: -375px;
+    margin-top: -285px;
+}
+
+.custom .triggers {
+    width: 520px;
+    height: 121px;
     position: absolute;
-    opacity: 0;
-} .xbox .face.up {
-    background-position: 0 -68px;
-    width: 52px;
-    height: 63px;
-    left: 46px;
-} .xbox .face.down {
-    background-position: -54px 63px;
-    width: 52px;
-    height: 63px;
-    left: 46px;
-    top: 81px;
-} .xbox .face.left {
-    background-position: -108px -68px;
-    width: 64px;
-    height: 52px;
-    left: -1px;
-    top: 47px; 
-} .xbox .face.right {
-    background-position: -175px -68px;
-    width: 63px;
-    height: 52px;
-    left: 81px;
-    top: 46px;
-} .xbox .bumpers {
-    width: 620px;
-    height: 35px;
-    left: 93px;
-    top: 114px;
-} .xbox .bumper {
-    background: url(Bumpers.png);
-    width: 110px;
-    height: 35px;
-    opacity: 0;
-} .xbox .triggers {
-    width: 619px;
-    height: 108px;
-    left: 94px;
-} .xbox .trigger {
+    left: 126px;
+    top: 239px;
     background: url(triggers.png);
-    width: 111px;
-    height: 108px;
-    opacity: 0;
-} .xbox .trigger.right {
-    background-position: -113px 0;
-	transform: rotateY(0);
+}
+
+.custom .bumpers {
+    position: absolute;
+    width: 536px;
+    height: 61px;
+    left: 107px;
+    top: 129px;
+    background: url(Bumpers.png);
+}
+
+.custom .buttons {
+    position: absolute;
+    width: 157px;
+    height: 164px;
+    top: 231px;
+    left: 388px;
+    background: url(buttons.png);
+}
+
+.custom .dpad {
+    position: absolute;
+    width: 110px;
+    height: 111px;
+    top: 345px;
+    left: 223px;
+    background: url(dpad.png);
+}
+
+.custom .options {
+    position: absolute;
+    width: 141px;
+    height: 33px;
+    top: 264px;
+    left: 306px;
+    background: url(options.png);
+}
+
+.custom .sticks {
+    position: absolute;
+    width: 137px;
+    height: 139px;
+    top: 239px;
+    left: 224px;
+    background: url(sticks.png);
+}
+
+.custom.half {
+    margin-top: -315px;
+}
+
+.custom {
+    background: no-repeat center;
 }
